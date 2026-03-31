@@ -39,9 +39,10 @@ Before any operations could be done, following issues needed to be resolved:
  - Creation of unified data object with TCR and single cell data
 The different cell lineages are best illustrated by UMAP plots. 
 
-
+![UMAP plot I](Images/UMAP_plot_I.png)
 Figure 2: UMAP plot I 
 
+![UMAP plot II](Images/UMAP_plot_II.png)
 Figure 3: UMAP plot II
 
 Phase 2 (TCR data) 
