@@ -2,7 +2,9 @@
 Study of DP T cells in Renal cancer, data taken from [1]
 This multi omics project in the field of cancer genomics immunology studied the behavior of DP T cells in Renal cell carcinoma. 
 
+# Addressing the issues
 To map the Progenitor Engine of the Tumor Immune Response following questions had to be addressed
+
 (1). The Double Positive (DP) population found in tumor cells of Renal Cell Carcinoma (RCC)
 Authors of the study identified a small population of T-cells expressing both CD4 and CD8 markers (Double Positive, or DP). DP cells found in tumor tissue could represent a functional source of new immune cells, triggered by the tumor environment.
 
@@ -24,15 +26,28 @@ Using the findings from above points the study concluded that DP cells in RCC re
  - Amplifies the response through rapid division
  - Refills the army of effector cells that are exhausted or killed by the tumor.
 
-Processing flow
+# Processing flow
 Complete processing flow is represented by Flow diagram (Figure 1)
 
 ![Complete processing flow](Images/Flow_diagram.png)
 Figure 1: Complete processing flow
 
-This diagram isn't just a list of steps; it is the narrative structure of your discovery:
-Phase 1 (The Input): Shows how you handled the barcode mismatch and created the unified adata_tcr object.
-Phases 2 & 3 (The Evidence): Are the two separate lines of proof you built. Phase 2 (TCR) proved clonal relationship, and Phase 3 (RNA) proved that DP cells were the only ones dividing.
+## Comments on processing flow
+Phase 1 (The Input)
+Before any operations could be done, following issues needed to be resolved:
+ - Barcode mismatch between the inputs (scRNA-seq, scTCR-seq)
+ - Creation of unified data object with TCR and single cell data
+The different cell lineages are best illustrated by UMAP plots. 
+
+
+Figure 2: UMAP plot I 
+
+Figure 3: UMAP plot II
+
+Phase 2 (TCR data) 
+Establish clonal relationship between different cell lineages, and 
+
+Phase 3 (RNA) proved that DP cells were the only ones dividing.
 Phase 4 (The Integration): Shows where you brought them together to create the branching UMAPs and the final PAGA trajectory.
 
 Why this is a "Multi-Omic Masterclass"
