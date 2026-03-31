@@ -33,19 +33,21 @@ Complete processing flow is represented by Flow diagram (Figure 1)
 Figure 1: Complete processing flow
 
 ## Comments on processing flow
-Phase 1 (The Input)
+### Phase 1 (The Input)
 Before any operations could be done, following issues needed to be resolved:
  - Barcode mismatch between the inputs (scRNA-seq, scTCR-seq)
  - Creation of unified data object with TCR and single cell data
+
+#### UMAP plots
 The different cell lineages are best illustrated by UMAP plots. 
 
 ![UMAP plot I](Images/UMAP_plot_I.png)
-Figure 2: UMAP plot I 
+Figure 2: UMAP plot I (cell type/patient) 
 
 ![UMAP plot II](Images/UMAP_plot_II.png)
-Figure 3: UMAP plot II
+Figure 3: UMAP plot II (cell cycle/functional identity of the cell)
 
-Phase 2 (TCR data) 
+### Phase 2 (TCR data) 
 Establish clonal relationship between different cell lineages, and 
 
 Phase 3 (RNA) proved that DP cells were the only ones dividing.
