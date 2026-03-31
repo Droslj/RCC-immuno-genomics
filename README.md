@@ -27,7 +27,7 @@ Using the findings from above points the study concluded that DP cells in RCC re
 Processing flow
 Complete processing flow is represented by Flow diagram (Figure 1)
 
-![Complete Processing Workflow](Images/Flow diagram.png)
+![Complete processing flow](Images/Flow diagram.png)
 Figure 1: Complete processing flow
 
 This diagram isn't just a list of steps; it is the narrative structure of your discovery:
