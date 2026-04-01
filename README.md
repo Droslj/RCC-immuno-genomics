@@ -30,7 +30,7 @@ Using the findings from above points the study concluded that DP cells in RCC re
 Complete processing flow is represented by Flow diagram (Figure 1)
 
 ![Complete processing flow](Images/Flow_diagram.png)
-Figure 1: Complete processing flow
+**Figure 1: Complete processing flow**
 
 ## Comments on processing flow
 ### Phase 1 (The Input)
@@ -42,10 +42,20 @@ Before any operations could be done, following issues needed to be resolved:
 The different cell lineages are best illustrated by UMAP plots. 
 
 ![UMAP plot I](Images/UMAP_plot_I.png)
-Figure 2: UMAP plot I (cell type/patient) 
+
+**Figure 2: UMAP plot I (cell type/patient)** 
 
 ![UMAP plot II](Images/UMAP_plot_II.png)
-Figure 3: UMAP plot II (cell cycle/functional identity of the cell)
+
+**Figure 3: UMAP plot II (cell cycle/T cell functional identity)**
+
+**Observation on UMAP plot II**
+Plot on the left (cell cycle) shows T-cells that are actively proliferating (G2S, M phase) vs. others (G1 phase) concentrated in the top middle cluster, which coincides with the top middle cluster (marked PROLIF) of the UMAP plot on the right. Both plots show cells that are actively proliferating. This is easily visualized with stacked bar plot
+
+![Cell cycle distribution](Images/UMAP_plot_II.png)
+
+**Figure 4: Cell cycle distribution**
+
 
 ### Phase 2 (TCR data) 
 Establish clonal relationship between different cell lineages, and 
