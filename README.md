@@ -33,12 +33,15 @@ Complete processing flow is represented by Flow diagram (Figure 1)
 **Figure 1: Complete processing flow**
 
 ## Comments on processing flow
+
 ### Phase 1 (The Input)
+
 Before any operations could be done, following issues needed to be resolved:
  - Barcode mismatch between the inputs (scRNA-seq, scTCR-seq)
  - Creation of unified data object with TCR and single cell data
 
 #### UMAP plots
+
 The different cell lineages are best illustrated by UMAP plots. 
 
 ![UMAP plot I](Images/UMAP_plot_I.png)
@@ -50,17 +53,28 @@ The different cell lineages are best illustrated by UMAP plots.
 **Figure 3: UMAP plot II (cell cycle/T cell functional identity)**
 
 **Observation on UMAP plot II**
-Plot on the left (cell cycle) shows T-cells that are actively proliferating (G2S, M phase) vs. others (G1 phase) concentrated in the top middle cluster, which coincides with the top middle cluster (marked PROLIF) of the UMAP plot on the right. Both plots show cells that are actively proliferating. This is easily visualized with stacked bar plot
 
-![Cell cycle distribution](Images/UMAP_plot_II.png)
+Plot on the left (cell cycle) shows T-cells that are actively proliferating (G2S, M phase) vs. others (G1 phase) concentrated in the top middle cluster, which coincides with the top middle cluster (marked PROLIF) of the UMAP plot on the right. Both plots show cells that are actively proliferating occupying the same cluster on different plots. Cell cycle distribution may also be visualized with stacked bar plot.
+
+![Cell cycle distribution](Images/Cell_cycle_distribution.png)
 
 **Figure 4: Cell cycle distribution**
 
 
-### Phase 2 (TCR data) 
-Establish clonal relationship between different cell lineages, and 
+### Phase 2 (TCR data) - Identifying shared clonotypes
 
-Phase 3 (RNA) proved that DP cells were the only ones dividing.
+In order to establish clonal relationship between different cell lineages, shared clonotype category is required. This enables us to view which clonotypes are shared between DP and CD4/CD8 lineages. These relationships are illustrated with UMAP plots 
+
+![Shared clonotypes](Images/Shared_vs_unique_clonotypes.png)
+
+**Figure 5: Shared clonotypes UMAP plot**
+
+The CD4 Transition plot shows dots concentrated more toward the top and far-left "islands, whereas the CD8 Transition (Right) plot shows red dots are much more dense in the lower-right clusters. 
+Small, dense cluster in the center-right is intense in both plots. This is proof that the same progenitor pool is feeding both lineages simultaneously.
+
+### Phase 3 (scRNA data) - Identify dividing cells
+
+
 Phase 4 (The Integration): Shows where you brought them together to create the branching UMAPs and the final PAGA trajectory.
 
 Why this is a "Multi-Omic Masterclass"
