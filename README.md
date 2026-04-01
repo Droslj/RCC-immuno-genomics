@@ -101,6 +101,14 @@ In this section, the most expanded shared clonotypes found in this assay were id
 
 **Figure 7: Lineage commitment of top shared clonotype families**
 
+**Observations on lineage commitment**
+
+Clonal expansion -> Progenitor-to-Effector Ratio on some lineages is significant (e.g. rows 0, 2), which shows considerable Clonal Expansion. 
+
+Public Clones --> Every single one of top 10 clones is found in multiple patients. Usually, TCRs are unique to an individual. Finding the exact same TCR sequence shared across different people suggests these clones are targeting a very common cancer antigen or a "super-antigen" common to Renal Cell Carcinoma.
+
+Tissue Trajectory --> Clones are found in almost all tissues. This proves that these families are not local to kidney. The DP clones likely start in the tumor or kidney tissue and then the expanded CD8/CD4 cells circulate through the blood (PBMC) to monitor the rest of the body.
+
 
 
 References:
