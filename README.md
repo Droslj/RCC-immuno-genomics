@@ -63,17 +63,28 @@ Plot on the left (cell cycle) shows T-cells that are actively proliferating (G2S
 
 ### Phase 2 (TCR data) - Identifying shared clonotypes
 
-In order to establish clonal relationship between different cell lineages, shared clonotype category is required. This enables us to view which clonotypes are shared between DP and CD4/CD8 lineages. These relationships are illustrated with UMAP plots 
+In order to establish clonal relationship between different cell lineages, shared clonotype category is required. This enables us to view which clonotypes are shared between DP and CD4/CD8 lineages. These relationships are illustrated with UMAP plots.
 
 ![Shared clonotypes](Images/Clonal_evidence_of_DP_transition.png)
 
 **Figure 5: Shared clonotypes UMAP plot**
 
-The CD4 Transition plot shows dots concentrated more toward the top and far-left "islands, whereas the CD8 Transition (Right) plot shows red dots are much more dense in the lower-right clusters. 
-Small, dense cluster in the center-right is intense in both plots. This is proof that the same progenitor pool is feeding both lineages simultaneously.
+The CD4 Transition plot shows dots concentrated more toward the top and far-left islands, whereas the CD8 Transition (Right) plot shows red dots are much more dense in the lower-right clusters. 
+Small, dense cluster in the center-right is intense in both plots. This is the DP progenitor pool is feeding both lineages simultaneously.
 
 ### Phase 3 (scRNA data) - Identify dividing cells
 
+In this phase, proliferating cells were identifies using well-known marker genes 
+
+![Proliferation](Images/Stemness_and_proliferation.png)
+
+**Figure 6: Proliferation of cell lineages** 
+
+**Observation**
+
+The DP group has the lowest total cell count, it has the highest concentration of actively dividing cells. These cells are in a state of rapid cell cycle (mitosis), creating the seeds that then differentiate and expand into the massive CD8 and CD4 lineages, as seen on Figure 5.  This proves that the DP population is the Progenitor Engine.
+
+CD4 group shows the highest expression of  classic marker for "stem-like" memory T-cells . This implies that CD4 cells are acting as the Long-term pool, required to maintain the lineage's presence in the tumor.
 
 Phase 4 (The Integration): Shows where you brought them together to create the branching UMAPs and the final PAGA trajectory.
 
