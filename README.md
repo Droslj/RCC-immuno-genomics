@@ -84,17 +84,18 @@ In this phase, proliferating cells were identifies using well-known marker genes
 
 The DP group has the lowest total cell count, it has the highest concentration of actively dividing cells. These cells are in a state of rapid cell cycle (mitosis), creating the seeds that then differentiate and expand into the massive CD8 and CD4 lineages, as seen on Figure 5.  This proves that the DP population is the Progenitor Engine.
 
-CD4 group shows the highest expression of  classic marker for "stem-like" memory T-cells . This implies that CD4 cells are acting as the Long-term pool, required to maintain the lineage's presence in the tumor.
+CD4 group shows the highest expression of  classic marker for stem-like memory T-cells . This implies that CD4 cells are acting as the long-term pool, required to maintain presence of these cell lineages in the tumor.
 
-Phase 4 (The Integration): Shows where you brought them together to create the branching UMAPs and the final PAGA trajectory.
+## Phase 4 (Integration) - Detailed Functional analysis
 
-Why this is a "Multi-Omic Masterclass"
-This diagram is great for a talk because it shows that you didn't just run an algorithm and accept the result. You built your conclusion by integrating:
-Genotype (TCR-seq/MiXCR)
-Phenotype (RNA-seq/Transcriptome)
-Metabolism (Cell Cycle Scoring)
+### Clonotypes summary
 
-It is a complete, well-reasoned systems immunology project.
+In this section, the most frequent clonotypes found in this assay were identified and quantificated. The summary is provided in the Table 1.
+
+
+![Clonotypes](Images/Clonotypes.png)
+
+**Table 1: Frequency of Clonotypes** 
 
 References:
 [1] Functionally heterogeneous intratumoral CD4+CD8+ double positive T cells can give rise to single positive T cells, PRJNA1389917, https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314072
