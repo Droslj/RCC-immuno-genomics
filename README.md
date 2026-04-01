@@ -5,36 +5,38 @@ This multi omics project in the field of cancer genomics immunology studied the 
 # Addressing the issues
 In order to successfuly map the DP Progenitor engine of the Tumor Immune Response, following issues had to be addressed
 
-(1). The Double Positive (DP) population found in tumor cells of Renal Cell Carcinoma (RCC)
+**(1). The Double Positive (DP) population found in tumor cells of Renal Cell Carcinoma (RCC)**
 
-Authors of the study identified a small population of T-cells expressing both CD4 and CD8 markers (Double Positive, or DP). DP cells found in tumor tissue could represent a functional source of new immune cells, triggered by the tumor environment.
+A small population of T-cells expressing both CD4 and CD8 markers (Double Positive, or DP) was identified. DP cells found in tumor tissue could represent a functional source of new immune cells, triggered by the tumor environment.
 
-(2). Multi-Omic Integration
+**(2). Multi-Omic Integration**
 
 To address these issues, distinct layers of single-cell data from had to be integrated: 
  - Transcriptomics data (scRNA-seq) was used to identify cell populations 
  - TCR Sequencing data (scTCR-seq) was used to track families (clonotypes) across different states
  - Cell Cycle Scoring was used to identify which cells were actively dividing.
 
-(3) The Evidence
+**(3) Functional analysis (Evidence)**
 
-To answer these and other related questions, following functionality had to be used
+Following functionality of the cell lineages was assesed:
  - The Genetic Fingerprint (Clonal Sharing)  ->  By identifying shared TCR sequences provided proof that cells in the DP cluster shared identical genetic parents with cells in the mature CD8 and CD4 clusters
  - The Expansion Ratio (Source vs. Sink)     ->  Size of these families needed to be quantified. Top clones showed a massive imbalance, where a handful of DP cells (the "Source") were linked to thousands of CD8/CD4 cells (the "Sink")
  - The Metabolic Engine (Proliferation)      ->  Using dot plots of known proliferation markers, the DP cells were found to be the only group in a state of high-velocity division
- - The Lineage Bifurcation (PAGA Trajectory) ->  Using PAGA trajectory analysis, connectivity between clusters was mathematically modelled.
+ - The Lineage Bifurcation (PAGA Trajectory) ->  Using PAGA trajectory analysis, connectivity between clusters was mathematically modelled
+ - The Cytotoxic potential (Cytotoxicity)    ->  Using dot plots of known cytotoxicy markers, the CD8 cells show the highest mean expression and largest fraction of cells that exhibit cytotoxic functionality 
+ - The (pro vs anti) inflammatory response   ->  Using dot plots of known pro and anti inflamatory markers, the inflamatory potential of cell lineages was assesed.
 
-Using the findings from above points the study concluded that DP cells in RCC represent a progenitor reservoir with following functions:
-
+Using the findings from above points the study concluded that DP cells in RCC represent a progenitor reservoir with following functionality:
  - Recognize tumor antigens
- - Amplifies the response through rapid division
- - Refills the army of effector cells that are exhausted or killed by the tumor.
+ - Amplify the response through rapid division
+ - Refill the army of effector cells that are exhausted or killed by the tumor.
 
 # Processing flow
 
 Complete processing flow is represented by Flow diagram (Figure 1)
 
 ![Complete processing flow](Images/Flow_diagram.png)
+
 **Figure 1: Complete processing flow**
 
 ## Comments on processing flow
@@ -102,7 +104,7 @@ In this section, the most expanded shared clonotypes found in this assay were id
 
 **Table 1: List of Top expanded/shared Clonotypes** 
 
-![Lineage commitment](Lineage_commitment.png)
+![Lineage commitment](Images/Lineage_commitment.png)
 
 **Figure 7: Lineage commitment of top shared clonotype families**
 
@@ -115,7 +117,27 @@ Public Clones --> Every single one of top 10 clones is found in multiple patient
 
 Tissue Trajectory --> Clones are found in almost all tissues. This proves that these families are not local to kidney. The DP clones likely start in the tumor or kidney tissue and then the expanded CD8/CD4 cells circulate through the blood (PBMC) to monitor the rest of the body.
 
+## Inflammatory potential
 
+Balace between pro and anti inflammatory response highlights the biological tension in the tumor and the surrounding tissues. To asses it, I used dot plot on known pro and anti inflammatory markers (see Figure 8).
+
+![Inflammatory markers](Images/Pro_vs_anti_inflamatory_response.png)
+
+**Figure 8: Dotplot of pro vs. anti inflammatory markers**
+
+**Observations on Inflammatory potential**
+
+Pro-Inflammatory "Prime" (Left Side) 
+
+DP cells are Chemokine powerhouses (CCL4, CCL5). They are effectively the "Dispatchers" of the immune system.
+CD8 cells have the highest IFNG (the "Warhead"), the DP cells have a higher fraction of cells expressing $CCL3$. This suggests the DP cells are more focused on recruitment than direct killing.
+
+Anti-Inflammatory "Brake" (Right Side) 
+
+Exhaustion markers (LAG3 and TIGIT) are significantly higher in DP cells than in the CD4 or CD8 mature populations.
+The Biology: This is a fascinating find. It suggests that these progenitors are "born" into a state of high stress. They are trying to proliferate, but they are already expressing inhibitory receptors ($LAG3$).
+
+TGFB1: This is high in CD8s. Since TGF-beta is a potent immunosuppressor, this shows that as cells transition from DP to CD8, they are being "bathed" in suppressive signals from the tumor.
 
 References:
 [1] Functionally heterogeneous intratumoral CD4+CD8+ double positive T cells can give rise to single positive T cells, PRJNA1389917, https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314072
