@@ -65,7 +65,7 @@ Plot on the left (cell cycle) shows T-cells that are actively proliferating (G2S
 
 In order to establish clonal relationship between different cell lineages, shared clonotype category is required. This enables us to view which clonotypes are shared between DP and CD4/CD8 lineages. These relationships are illustrated with UMAP plots 
 
-![Shared clonotypes](Images/Shared_vs_unique_clonotypes.png)
+![Shared clonotypes](Images/Clonal_evidence_of_DP_transition.png)
 
 **Figure 5: Shared clonotypes UMAP plot**
 
