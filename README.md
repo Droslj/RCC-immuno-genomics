@@ -90,12 +90,16 @@ CD4 group shows the highest expression of  classic marker for stem-like memory T
 
 ### Clonotypes summary
 
-In this section, the most expanded shared clonotypes found in this assay were identified and quantificated. The summary is provided in the Table 1.
+In this section, the most expanded shared clonotypes found in this assay were identified and quantificated. The summary is provided in the Table 1. Lineage commitment of top shared families is provided in Figure 7.
 
 
 ![Clonotypes](Images/Clonotypes.png)
 
 **Table 1: List of Top expanded/shared Clonotypes** 
+
+![Lineage commitment](Lineage_commitment.png)
+
+**Figure 7: Lineage commitment of top shared clonotype families**
 
 
 
