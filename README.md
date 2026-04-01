@@ -90,12 +90,14 @@ CD4 group shows the highest expression of  classic marker for stem-like memory T
 
 ### Clonotypes summary
 
-In this section, the most frequent clonotypes found in this assay were identified and quantificated. The summary is provided in the Table 1.
+In this section, the most expanded shared clonotypes found in this assay were identified and quantificated. The summary is provided in the Table 1.
 
 
 ![Clonotypes](Images/Clonotypes.png)
 
-**Table 1: Frequency of Clonotypes** 
+**Table 1: List of Top expanded/shared Clonotypes** 
+
+
 
 References:
 [1] Functionally heterogeneous intratumoral CD4+CD8+ double positive T cells can give rise to single positive T cells, PRJNA1389917, https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314072
