@@ -39,15 +39,29 @@ Complete processing flow is represented by Flow diagram (Figure 1)
 
 **Figure 1: Complete processing flow**
 
-## Comments on processing flow
+# Processing flow details
 
-### Phase 1 (The Input)
+## Phase 1 (The Input)
+
+**h5ad object**
+I used the original h5ad object from the original project. From the name designation and layers/objects, I concluded that the adata object has already been processed by the authors of the original study as follows:
+- filtered out all cells except T cells
+- removed doublets (removed cells where two cells were stuck together).
+- removed contaminant cells (like dead cells or ambient RNA).
+- removed batch effects (using harmony).
+
+Based on transcriptomic profiles (see Figure 5), the remaining cells were classified into one of the T cell classes. 
+
+**TCR object**
+I used the original TCR object provided by the authors of the original project. The original reads have been processed by one of the tools for processing scTCR reads and merged. Columns, related to clustering, were transferred from the h5ad object.  
+
+**Merging objects**
 
 Before any operations could be done, following issues needed to be resolved:
  - Barcode mismatch between the inputs (scRNA-seq, scTCR-seq)
- - Creation of unified data object with TCR and single cell data
+ - Creation of unified data object with TCR and single cell data.
 
-#### UMAP plots
+### UMAP plots
 
 The different cell lineages are best illustrated by UMAP plots. 
 
@@ -67,8 +81,7 @@ Plot on the left (cell cycle) shows T-cells that are actively proliferating (G2S
 
 **Figure 4: Cell cycle distribution**
 
-
-### Phase 2 (TCR data) - Identifying shared clonotypes
+## Phase 2 (TCR data) - Identifying shared clonotypes
 
 In order to establish clonal relationship between different cell lineages, shared clonotype category is required. This enables us to view which clonotypes are shared between DP and CD4/CD8 lineages. These relationships are illustrated with UMAP plots.
 
@@ -79,7 +92,7 @@ In order to establish clonal relationship between different cell lineages, share
 The CD4 Transition plot shows dots concentrated more toward the top and far-left islands, whereas the CD8 Transition (Right) plot shows red dots are much more dense in the lower-right clusters. 
 Small, dense cluster in the center-right is intense in both plots. This is the DP progenitor pool is feeding both lineages simultaneously.
 
-### Phase 3 (scRNA data) - Identify dividing cells
+## Phase 3 (scRNA data) - Identify dividing cells
 
 In this phase, proliferating cells were identifies using well-known marker genes 
 
@@ -97,7 +110,7 @@ CD4 group shows the highest expression of  classic marker for stem-like memory T
 
 ### Clonotypes summary
 
-In this section, the most expanded shared clonotypes found in this assay were identified and quantificated. The summary is provided in the Table 1. Lineage commitment of top shared families is provided in Figure 7.
+In this section, the most expanded shared clonotypes found in this assay were identified and quantified. The summary is provided in the Table 1. Lineage commitment of top shared families is provided in Figure 7.
 
 ![Clonotypes](Images/Clonotypes.png)
 
@@ -116,7 +129,7 @@ Public Clones --> Every single one of top 10 clones is found in multiple patient
 
 Tissue Trajectory --> Clones are found in almost all tissues. This proves that these families are not local to kidney. The DP clones likely start in the tumor or kidney tissue and then the expanded CD8/CD4 cells circulate through the blood (PBMC) to monitor the rest of the body.
 
-## Cytotoxic potential
+### Cytotoxic potential
 
 Cytotoxic potential of DP-CD8 shared lineages is related with expression of cytotoxicity genes (GZMB, PRF1, and GNLY) across the shared DP-CD8 lineages (top 3 are selected). The cytotoxic potential is revealed using dotplot (Figure 8)
 
@@ -130,7 +143,7 @@ The CD8 cells show the highest mean expression and largest fraction of cells for
 The DP cells already show moderate expression of these killing genes (especially GZMB and PRF1). They haven't reached the full intensity of the CD8 state.
 The Lineage Split: The CD4 cells in these same families show almost no expression of these cytotoxic markers. This suggests that once a DP cell commits to the CD8 lineage, it activates this specific killing program.
 
-## Inflammatory potential
+### Inflammatory potential
 
 Balance between pro and anti inflammatory response highlights the biological tension in the tumor and the surrounding tissues. To asses it, I used dot plot on known pro and anti inflammatory markers (see Figure 9).
 
@@ -142,6 +155,16 @@ Balance between pro and anti inflammatory response highlights the biological ten
 
 DP cells and CD8 cells (left part of the plot) are predominantly active in pro-inflamatory response. Chemokines (IFNG, CCL3, CCL4, CCL5), most expressed in DP and CD8 cells modulate the response of immune system
 Anti inflammatory response exhibits immunosuppression, demonstrated by Exhaustion markers (LAG3 and TIGIT), which are significantly higher in DP cells than in the CD4 or CD8 mature populations. This may suggest that these progenitors are already born into a state of high stress. TGF-beta is another potent immunosuppressor; its presence shows that as cells transition from DP to CD8, they are being dialed down by the suppressive signals from the tumor.
+
+# Conclussion
+
+Based on this analysis, following conclussions can be made: 
+(1) Evidence of Direct Ancestry -> Identical TCRs were found in DP, CD8, and CD4 clusters. This proves  DP cells are the parents of the mature effector cells 
+(2) Evidence of clonal expansion -> single DP cell could be linked to many (~15-20) mature SP cells
+(3) Cell cycle activity (proliferation) -> Highest cell cycle activity was detected in the DP cell population, which are the primary site of T-cell multiplication
+(4) Trajectory analysis (PAGA) -> DP cells are the Hub, connecting to all other states
+(5) Cytotoxic potential -> DP cells show predominantly signalling potential, while CD8 cells show true cytotoxic potential
+(6) Suppressive pressure -> DP cells function as a proliferative engine and a recruitment hub, but they also exhibit early signs of immune checkpoint expression. This indicates that the T-cell response in RCC is under suppressive pressure from the very moment of clonal birth.
 
 References:
 [1] Functionally heterogeneous intratumoral CD4+CD8+ double positive T cells can give rise to single positive T cells, PRJNA1389917, https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314072
