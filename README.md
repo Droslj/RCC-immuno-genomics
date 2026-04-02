@@ -99,7 +99,6 @@ CD4 group shows the highest expression of  classic marker for stem-like memory T
 
 In this section, the most expanded shared clonotypes found in this assay were identified and quantificated. The summary is provided in the Table 1. Lineage commitment of top shared families is provided in Figure 7.
 
-
 ![Clonotypes](Images/Clonotypes.png)
 
 **Table 1: List of Top expanded/shared Clonotypes** 
@@ -117,6 +116,9 @@ Public Clones --> Every single one of top 10 clones is found in multiple patient
 
 Tissue Trajectory --> Clones are found in almost all tissues. This proves that these families are not local to kidney. The DP clones likely start in the tumor or kidney tissue and then the expanded CD8/CD4 cells circulate through the blood (PBMC) to monitor the rest of the body.
 
+
+
+
 ## Inflammatory potential
 
 Balace between pro and anti inflammatory response highlights the biological tension in the tumor and the surrounding tissues. To asses it, I used dot plot on known pro and anti inflammatory markers (see Figure 8).
@@ -127,17 +129,8 @@ Balace between pro and anti inflammatory response highlights the biological tens
 
 **Observations on Inflammatory potential**
 
-Pro-Inflammatory "Prime" (Left Side) 
-
-DP cells are Chemokine powerhouses (CCL4, CCL5). They are effectively the "Dispatchers" of the immune system.
-CD8 cells have the highest IFNG (the "Warhead"), the DP cells have a higher fraction of cells expressing $CCL3$. This suggests the DP cells are more focused on recruitment than direct killing.
-
-Anti-Inflammatory "Brake" (Right Side) 
-
-Exhaustion markers (LAG3 and TIGIT) are significantly higher in DP cells than in the CD4 or CD8 mature populations.
-The Biology: This is a fascinating find. It suggests that these progenitors are "born" into a state of high stress. They are trying to proliferate, but they are already expressing inhibitory receptors ($LAG3$).
-
-TGFB1: This is high in CD8s. Since TGF-beta is a potent immunosuppressor, this shows that as cells transition from DP to CD8, they are being "bathed" in suppressive signals from the tumor.
+DP cells and CD8 cells (left part of the plot) are predominantly active in pro-inflamatory response. Chemokines (IFNG, CCL3, CCL4, CCL5), most expressed in DP and CD8 cells modulate the response of immune system
+Anti inflammatory response exhibits immunosuppression, demonstrated by Exhaustion markers (LAG3 and TIGIT), which are significantly higher in DP cells than in the CD4 or CD8 mature populations. This may suggest that these progenitors are already born into a state of high stress. TGF-beta is another potent immunosuppressor; its presence shows that as cells transition from DP to CD8, they are being dialed down by the suppressive signals from the tumor.
 
 References:
 [1] Functionally heterogeneous intratumoral CD4+CD8+ double positive T cells can give rise to single positive T cells, PRJNA1389917, https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314072
