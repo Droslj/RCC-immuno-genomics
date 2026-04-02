@@ -107,7 +107,7 @@ In this section, the most expanded shared clonotypes found in this assay were id
 
 **Figure 7: Lineage commitment of top shared clonotype families**
 
-**Observations on lineage commitment**
+**Observations**
 
 Following observations may be made about the lineage commitment 
 Clonal expansion -> Progenitor-to-Effector Ratio on some lineages is significant (e.g. rows 0, 2), which shows considerable Clonal Expansion. 
@@ -120,19 +120,25 @@ Tissue Trajectory --> Clones are found in almost all tissues. This proves that t
 
 Cytotoxic potential of DP-CD8 shared lineages is related with expression of cytotoxicity genes (GZMB, PRF1, and GNLY) across the shared DP-CD8 lineages (top 3 are selected). The cytotoxic potential is revealed using dotplot (Figure 8)
 
+![Cytotoxic potential](Images/Cytotoxic_potential_of_shared_DP_lineages.png)
 
+**Figure 8: Cytotoxic potential of shared cell lineages**
 
-Figure 8: Cytotoxic potential of shared cell lineages
+**Observations**
+
+The CD8 cells show the highest mean expression and largest fraction of cells for GZMB, PRF1, and GNLY. This indicates they are the fully mature T killer cells.
+The DP cells already show moderate expression of these killing genes (especially GZMB and PRF1). They haven't reached the full intensity of the CD8 state.
+The Lineage Split: The CD4 cells in these same families show almost no expression of these cytotoxic markers. This suggests that once a DP cell commits to the CD8 lineage, it activates this specific killing program.
 
 ## Inflammatory potential
 
-Balance between pro and anti inflammatory response highlights the biological tension in the tumor and the surrounding tissues. To asses it, I used dot plot on known pro and anti inflammatory markers (see Figure 8).
+Balance between pro and anti inflammatory response highlights the biological tension in the tumor and the surrounding tissues. To asses it, I used dot plot on known pro and anti inflammatory markers (see Figure 9).
 
 ![Inflammatory markers](Images/Pro_vs_anti_inflamatory_response.png)
 
-**Figure 8: Dotplot of pro vs. anti inflammatory markers**
+**Figure 9: Dotplot of pro vs. anti inflammatory markers**
 
-**Observations on Inflammatory potential**
+**Observations**
 
 DP cells and CD8 cells (left part of the plot) are predominantly active in pro-inflamatory response. Chemokines (IFNG, CCL3, CCL4, CCL5), most expressed in DP and CD8 cells modulate the response of immune system
 Anti inflammatory response exhibits immunosuppression, demonstrated by Exhaustion markers (LAG3 and TIGIT), which are significantly higher in DP cells than in the CD4 or CD8 mature populations. This may suggest that these progenitors are already born into a state of high stress. TGF-beta is another potent immunosuppressor; its presence shows that as cells transition from DP to CD8, they are being dialed down by the suppressive signals from the tumor.
