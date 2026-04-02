@@ -116,12 +116,17 @@ Public Clones --> Every single one of top 10 clones is found in multiple patient
 
 Tissue Trajectory --> Clones are found in almost all tissues. This proves that these families are not local to kidney. The DP clones likely start in the tumor or kidney tissue and then the expanded CD8/CD4 cells circulate through the blood (PBMC) to monitor the rest of the body.
 
+## Cytotoxic potential
+
+Cytotoxic potential of DP-CD8 shared lineages is related with expression of cytotoxicity genes (GZMB, PRF1, and GNLY) across the shared DP-CD8 lineages (top 3 are selected). The cytotoxic potential is revealed using dotplot (Figure 8)
 
 
+
+Figure 8: Cytotoxic potential of shared cell lineages
 
 ## Inflammatory potential
 
-Balace between pro and anti inflammatory response highlights the biological tension in the tumor and the surrounding tissues. To asses it, I used dot plot on known pro and anti inflammatory markers (see Figure 8).
+Balance between pro and anti inflammatory response highlights the biological tension in the tumor and the surrounding tissues. To asses it, I used dot plot on known pro and anti inflammatory markers (see Figure 8).
 
 ![Inflammatory markers](Images/Pro_vs_anti_inflamatory_response.png)
 
