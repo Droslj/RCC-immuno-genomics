@@ -1,4 +1,4 @@
-# RCC-immuno-genomincs
+# RCC-immuno-genomics
 Study of DP T cells in Renal cancer, data taken from [1]
 This multi omics project in the field of cancer genomics immunology studied the behavior of DP T cells in Renal cell carcinoma. 
 
@@ -44,6 +44,7 @@ Complete processing flow is represented by Flow diagram (Figure 1)
 ## Phase 1 (The Input)
 
 **h5ad object**
+
 I used the original h5ad object from the original project. From the name designation and layers/objects, I concluded that the adata object has already been processed by the authors of the original study as follows:
 
 - filtered out all cells except T cells
@@ -54,6 +55,7 @@ I used the original h5ad object from the original project. From the name designa
 Based on transcriptomic profiles (see Figure 5), the remaining cells were classified into one of the T cell classes. 
 
 **TCR object**
+
 I used the original TCR object provided by the authors of the original project. The original reads have been processed by one of the tools for processing scTCR reads and merged. Columns, related to clustering, were transferred from the h5ad object.  
 
 **Merging objects**
@@ -173,7 +175,7 @@ Based on this analysis, following conclussions can be made:
 
 (1) Evidence of Direct Ancestry -> Identical TCRs were found in DP, CD8, and CD4 clusters. This proves  DP cells are the parents of the mature effector cells 
 
-(2) Evidence of clonal expansion -> single DP cell could be linked to many (~15-20) mature SP cells
+(2) Evidence of clonal expansion -> Single DP cell could be linked to many (~15-20) mature SP cells
 
 (3) Cell cycle activity (proliferation) -> Highest cell cycle activity was detected in the DP cell population, which are the primary site of T-cell multiplication
 
@@ -184,4 +186,7 @@ Based on this analysis, following conclussions can be made:
 (6) Suppressive pressure -> DP cells function as a proliferative engine and a recruitment hub, but they also exhibit early signs of immune checkpoint expression. This indicates that the T-cell response in RCC is under suppressive pressure from the very moment of clonal birth.
 
 References:
-[1] Functionally heterogeneous intratumoral CD4+CD8+ double positive T cells can give rise to single positive T cells, PRJNA1389917, https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314072
+
+[1] Functionally heterogeneous intratumoral CD4+CD8+ double positive T cells can give rise to single positive T cells, PRJNA1389917, 
+
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314072
