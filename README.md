@@ -45,6 +45,7 @@ Complete processing flow is represented by Flow diagram (Figure 1)
 
 **h5ad object**
 I used the original h5ad object from the original project. From the name designation and layers/objects, I concluded that the adata object has already been processed by the authors of the original study as follows:
+
 - filtered out all cells except T cells
 - removed doublets (removed cells where two cells were stuck together).
 - removed contaminant cells (like dead cells or ambient RNA).
@@ -58,6 +59,7 @@ I used the original TCR object provided by the authors of the original project. 
 **Merging objects**
 
 Before any operations could be done, following issues needed to be resolved:
+
  - Barcode mismatch between the inputs (scRNA-seq, scTCR-seq)
  - Creation of unified data object with TCR and single cell data.
 
@@ -75,7 +77,9 @@ The different cell lineages are best illustrated by UMAP plots.
 
 **Observation on UMAP plot II**
 
-Plot on the left (cell cycle) shows T-cells that are actively proliferating (G2S, M phase) vs. others (G1 phase) concentrated in the top middle cluster, which coincides with the top middle cluster (marked PROLIF) of the UMAP plot on the right. Both plots show cells that are actively proliferating occupying the same cluster on different plots. Cell cycle distribution may also be visualized with stacked bar plot.
+(1) Plot on the left (cell cycle) shows T-cells that are actively proliferating (G2S, M phase) vs. others (G1 phase) concentrated in the top middle cluster, which coincides with the top middle cluster (marked PROLIF) of the UMAP plot on the right. 
+
+(2) Both plots show cells that are actively proliferating occupying the same cluster on different plots. Cell cycle distribution may also be visualized with stacked bar plot.
 
 ![Cell cycle distribution](Images/Cell_cycle_distribution.png)
 
@@ -90,6 +94,7 @@ In order to establish clonal relationship between different cell lineages, share
 **Figure 5: Shared clonotypes UMAP plot**
 
 The CD4 Transition plot shows dots concentrated more toward the top and far-left islands, whereas the CD8 Transition (Right) plot shows red dots are much more dense in the lower-right clusters. 
+
 Small, dense cluster in the center-right is intense in both plots. This is the DP progenitor pool is feeding both lineages simultaneously.
 
 ## Phase 3 (scRNA data) - Identify dividing cells
@@ -102,9 +107,11 @@ In this phase, proliferating cells were identifies using well-known marker genes
 
 **Observation**
 
-The DP group has the lowest total cell count, it has the highest concentration of actively dividing cells. These cells are in a state of rapid cell cycle (mitosis), creating the seeds that then differentiate and expand into the massive CD8 and CD4 lineages, as seen on Figure 5.  This proves that the DP population is the Progenitor Engine.
+(1) The DP group has the lowest total cell count, it has the highest concentration of actively dividing cells. These cells are in a state of rapid cell cycle (mitosis), creating the seeds that then differentiate and expand into the massive CD8 and CD4 lineages, as seen on Figure 5. 
 
-CD4 group shows the highest expression of  classic marker for stem-like memory T-cells . This implies that CD4 cells are acting as the long-term pool, required to maintain presence of these cell lineages in the tumor.
+(2) This proves that the DP population is the Progenitor Engine.
+
+(3) CD4 group shows the highest expression of the classic marker for stem-like memory T-cells . This implies that CD4 cells are acting as the long-term pool, required to maintain presence of these cell lineages in the tumor.
 
 ## Phase 4 (Integration) - Detailed Functional analysis
 
@@ -122,12 +129,11 @@ In this section, the most expanded shared clonotypes found in this assay were id
 
 **Observations**
 
-Following observations may be made about the lineage commitment 
-Clonal expansion -> Progenitor-to-Effector Ratio on some lineages is significant (e.g. rows 0, 2), which shows considerable Clonal Expansion. 
+(1) Clonal expansion -> Progenitor-to-Effector Ratio on some lineages is significant (e.g. rows 0, 2), which shows considerable Clonal Expansion. 
 
-Public Clones --> Every single one of top 10 clones is found in multiple patients. Usually, TCRs are unique to an individual. Finding the exact same TCR sequence shared across different people suggests these clones are targeting a very common cancer antigen or a "super-antigen" common to Renal Cell Carcinoma.
+(2) Public Clones --> Every single one of top 10 clones is found in multiple patients. Usually, TCRs are unique to an individual. Finding the exact same TCR sequence shared across different people suggests these clones are targeting a very common cancer antigen or a "super-antigen" common to Renal Cell Carcinoma.
 
-Tissue Trajectory --> Clones are found in almost all tissues. This proves that these families are not local to kidney. The DP clones likely start in the tumor or kidney tissue and then the expanded CD8/CD4 cells circulate through the blood (PBMC) to monitor the rest of the body.
+(3) Tissue Trajectory --> Clones are found in almost all tissues. This proves that these families are not local to kidney. The DP clones likely start in the tumor or kidney tissue and then the expanded CD8/CD4 cells circulate through the blood (PBMC) to monitor the rest of the body.
 
 ### Cytotoxic potential
 
@@ -139,9 +145,11 @@ Cytotoxic potential of DP-CD8 shared lineages is related with expression of cyto
 
 **Observations**
 
-The CD8 cells show the highest mean expression and largest fraction of cells for GZMB, PRF1, and GNLY. This indicates they are the fully mature T killer cells.
-The DP cells already show moderate expression of these killing genes (especially GZMB and PRF1). They haven't reached the full intensity of the CD8 state.
-The Lineage Split: The CD4 cells in these same families show almost no expression of these cytotoxic markers. This suggests that once a DP cell commits to the CD8 lineage, it activates this specific killing program.
+(1) The CD8 cells show the highest mean expression and largest fraction of cells for GZMB, PRF1, and GNLY. This indicates they are the fully mature T killer cells.
+
+(2) The DP cells already show moderate expression of these killing genes (especially GZMB and PRF1). They haven't reached the full intensity of the CD8 state.
+
+(3) The Lineage Split: The CD4 cells in these same families show almost no expression of these cytotoxic markers. This suggests that once a DP cell commits to the CD8 lineage, it activates this specific killing program.
 
 ### Inflammatory potential
 
@@ -153,17 +161,26 @@ Balance between pro and anti inflammatory response highlights the biological ten
 
 **Observations**
 
-DP cells and CD8 cells (left part of the plot) are predominantly active in pro-inflamatory response. Chemokines (IFNG, CCL3, CCL4, CCL5), most expressed in DP and CD8 cells modulate the response of immune system
-Anti inflammatory response exhibits immunosuppression, demonstrated by Exhaustion markers (LAG3 and TIGIT), which are significantly higher in DP cells than in the CD4 or CD8 mature populations. This may suggest that these progenitors are already born into a state of high stress. TGF-beta is another potent immunosuppressor; its presence shows that as cells transition from DP to CD8, they are being dialed down by the suppressive signals from the tumor.
+(1) DP cells and CD8 cells (left part of the plot) are predominantly active in pro-inflamatory response. 
+
+(2) Chemokines (IFNG, CCL3, CCL4, CCL5), most expressed in DP and CD8 cells modulate the response of immune system
+
+(3) Anti inflammatory response exhibits immunosuppression, demonstrated by Exhaustion markers (LAG3 and TIGIT), which are significantly higher in DP cells than in the CD4 or CD8 mature populations. This may suggest that these progenitors are already born into a state of high stress. TGF-beta is another potent immunosuppressor; its presence shows that as cells transition from DP to CD8, they are being dialed down by the suppressive signals from the tumor.
 
 # Conclussion
 
 Based on this analysis, following conclussions can be made: 
+
 (1) Evidence of Direct Ancestry -> Identical TCRs were found in DP, CD8, and CD4 clusters. This proves  DP cells are the parents of the mature effector cells 
+
 (2) Evidence of clonal expansion -> single DP cell could be linked to many (~15-20) mature SP cells
+
 (3) Cell cycle activity (proliferation) -> Highest cell cycle activity was detected in the DP cell population, which are the primary site of T-cell multiplication
+
 (4) Trajectory analysis (PAGA) -> DP cells are the Hub, connecting to all other states
+
 (5) Cytotoxic potential -> DP cells show predominantly signalling potential, while CD8 cells show true cytotoxic potential
+
 (6) Suppressive pressure -> DP cells function as a proliferative engine and a recruitment hub, but they also exhibit early signs of immune checkpoint expression. This indicates that the T-cell response in RCC is under suppressive pressure from the very moment of clonal birth.
 
 References:
