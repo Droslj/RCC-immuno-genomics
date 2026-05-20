@@ -1,6 +1,12 @@
 # RCC-immuno-genomics
-Study of DP T cells in Renal cancer, data taken from [1]
-This multi omics project in the field of cancer genomics immunology studied the behavior of DP T cells in Renal cell carcinoma. 
+
+Study of DP T cells in Renal cancer, data taken from [1] <br>
+
+**Keywords**
+Clonal expansion, Double positive T cells, Cancer immunology, scTCR-seq, scRNA-seq
+
+**Objective**
+This multi-omics project from the field of cancer genomics immunology studied the behavior of DP T cells in Renal cell carcinoma.<br>
 
 # Addressing the issues
 In order to successfuly map the DP Progenitor engine of the Tumor Immune Response, following issues had to be addressed
@@ -11,7 +17,7 @@ A small population of T-cells expressing both CD4 and CD8 markers (Double Positi
 
 **(2). Multi-Omic Integration**
 
-To address these issues, distinct layers of single-cell data from had to be integrated: 
+To address these issues, distinct layers of single-cell data had to be integrated: 
  - Transcriptomics data (scRNA-seq) was used to identify cell populations 
  - TCR Sequencing data (scTCR-seq) was used to track families (clonotypes) across different states
  - Cell Cycle Scoring was used to identify which cells were actively dividing.
@@ -19,14 +25,14 @@ To address these issues, distinct layers of single-cell data from had to be inte
 **(3) Functional analysis (Evidence)**
 
 Following functionality of the cell lineages was assesed:
- - The Genetic Fingerprint (Clonal Sharing)  ->  By identifying shared TCR sequences provided proof that cells in the DP cluster shared identical genetic parents with cells in the mature CD8 and CD4 clusters
+ - The Genetic Fingerprint (Clonal Sharing)  ->  Identifying shared TCR sequences provided proof that cells in the DP cluster shared identical genetic parents with cells in the mature CD8 and CD4 clusters
  - The Expansion Ratio (Source vs. Sink)     ->  Size of these families needed to be quantified. Top clones showed a massive imbalance, where a handful of DP cells (the "Source") were linked to thousands of CD8/CD4 cells (the "Sink")
  - The Metabolic Engine (Proliferation)      ->  Using dot plots of known proliferation markers, the DP cells were found to be the only group in a state of high-velocity division
  - The Lineage Bifurcation (PAGA Trajectory) ->  Using PAGA trajectory analysis, connectivity between clusters was mathematically modelled
  - The Cytotoxic potential (Cytotoxicity)    ->  Using dot plots of known cytotoxicy markers, the CD8 cells show the highest mean expression and largest fraction of cells that exhibit cytotoxic functionality 
  - The (pro vs anti) inflammatory response   ->  Using dot plots of known pro and anti inflamatory markers, the inflamatory potential of cell lineages was assesed.
 
-Using the findings from above points the study concluded that DP cells in RCC represent a progenitor reservoir with following functionality:
+Using the findings from above points this study concluded that DP cells in RCC represent a progenitor reservoir with following functionality:
  - Recognize tumor antigens
  - Amplify the response through rapid division
  - Refill the army of effector cells that are exhausted or killed by the tumor.
@@ -45,8 +51,7 @@ Complete processing flow is represented by Flow diagram (Figure 1)
 
 **h5ad object**
 
-I used the original h5ad object from the original project. From the name designation and layers/objects, I concluded that the adata object has already been processed by the authors of the original study as follows:
-
+I used the original h5ad object from the original project. From the name designation and layers/objects, I concluded that the adata object has already been processed by the authors of the original study as follows:<br>
 - filtered out all cells except T cells
 - removed doublets (removed cells where two cells were stuck together).
 - removed contaminant cells (like dead cells or ambient RNA).
