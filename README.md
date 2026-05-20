@@ -176,18 +176,12 @@ Balance between pro and anti inflammatory response highlights the biological ten
 
 # Conclussion
 
-Based on this analysis, following conclussions can be made: 
-
+Based on this analysis, following conclussions can be made:<br> 
 (1) Evidence of Direct Ancestry -> Identical TCRs were found in DP, CD8, and CD4 clusters. This proves  DP cells are the parents of the mature effector cells 
-
 (2) Evidence of clonal expansion -> Single DP cell could be linked to many (~15-20) mature SP cells
-
 (3) Cell cycle activity (proliferation) -> Highest cell cycle activity was detected in the DP cell population, which are the primary site of T-cell multiplication
-
 (4) Trajectory analysis (PAGA) -> DP cells are the Hub, connecting to all other states
-
 (5) Cytotoxic potential -> DP cells show predominantly signalling potential, while CD8 cells show true cytotoxic potential
-
 (6) Suppressive pressure -> DP cells function as a proliferative engine and a recruitment hub, but they also exhibit early signs of immune checkpoint expression. This indicates that the T-cell response in RCC is under suppressive pressure from the very moment of clonal birth.
 
 References:
