@@ -135,12 +135,10 @@ In this section, the most expanded shared clonotypes found in this assay were id
 **Figure 7: Lineage commitment of top shared clonotype families**
 
 **Observations**
-
-(1) Clonal expansion -> Progenitor-to-Effector Ratio on some lineages is significant (e.g. rows 0, 2), which shows considerable Clonal Expansion. 
-
-(2) Public Clones --> Every single one of top 10 clones is found in multiple patients. Usually, TCRs are unique to an individual. Finding the exact same TCR sequence shared across different people suggests these clones may be targeting a very common cancer antigen or a super-antigen common to Renal Cell Carcinoma.
-
-(3) Tissue Trajectory --> Clones are found in almost all tissues. This probably implies that these families are not local to kidney. The DP clones likely start in the tumor or kidney tissue and then the expanded CD8/CD4 cells circulate through the blood (PBMC) to monitor the rest of the body.
+Following observations can be made:
+ - Clonal expansion -> Progenitor-to-Effector Ratio on some lineages is significant (e.g. rows 0, 2), which shows considerable Clonal Expansion <br>
+ - Public Clones --> Every single one of top 10 clones is found in multiple patients. Usually, TCRs are unique to an individual. Finding the exact same TCR sequence shared across different people suggests these clones may be targeting a very common cancer antigen or a super-antigen common to Renal Cell Carcinoma<br>
+ - Tissue Trajectory --> Clones are found in almost all tissues. This probably implies that these families are not local to kidney. The DP clones likely start in the tumor or kidney tissue and then the expanded CD8/CD4 cells circulate through the blood (PBMC) to monitor the rest of the body.<br>
 
 ### Cytotoxic potential
 
@@ -150,10 +148,11 @@ Cytotoxic potential of DP-CD8 shared lineages is related with expression of cyto
 
 **Figure 8: Cytotoxic potential of shared cell lineages**
 
-**Observations**<br>
-The CD8 cells show the highest mean expression and largest fraction of cells for GZMB, PRF1, and GNLY. This indicates they are the fully mature T killer cells<br>
-The DP cells already show moderate expression of these killing genes (especially GZMB and PRF1). They haven't reached the full intensity of the CD8 state<br>
-The Lineage Split: The CD4 cells in these same families show almost no expression of these cytotoxic markers. This suggests that once a DP cell commits to the CD8 lineage, it activates this specific killing program.<br>
+**Observations**
+Following observation can be made:
+ - The CD8 cells show the highest mean expression and largest fraction of cells for GZMB, PRF1, and GNLY. This indicates they are the fully mature T killer cells<br>
+ - The DP cells already show moderate expression of these killing genes (especially GZMB and PRF1). They haven't reached the full intensity of the CD8 state<br>
+ - The Lineage Split: The CD4 cells in these same families show almost no expression of these cytotoxic markers. This suggests that once a DP cell commits to the CD8 lineage, it activates this specific killing program.<br>
 
 ### Inflammatory potential
 
@@ -163,13 +162,15 @@ Balance between pro and anti inflammatory response highlights the biological ten
 
 **Figure 9: Dotplot of pro vs. anti inflammatory markers**
 
-**Observations**<br>
-DP cells and CD8 cells (left part of the plot) are predominantly active in pro-inflamatory response<br>
-Chemokines (IFNG, CCL3, CCL4, CCL5), most expressed in DP and CD8 cells modulate the response of immune system<br>
-Anti inflammatory response exhibits immunosuppression, demonstrated by Exhaustion markers (LAG3 and TIGIT), which are significantly higher in DP cells than in the CD4 or CD8 mature populations. This may suggest that these progenitors are already born into a state of high stress. TGF-beta is another potent immunosuppressor; its presence shows that as cells transition from DP to CD8, they are being dialed down by the suppressive signals from the tumor.
+**Observations**
+Following observations can be made
+- DP cells and CD8 cells (left part of the plot) are predominantly active in pro-inflamatory response<br>
+ - Chemokines (IFNG, CCL3, CCL4, CCL5), most expressed in DP and CD8 cells modulate the response of immune system<br>
+ - Anti inflammatory response exhibits immunosuppression, demonstrated by Exhaustion markers (LAG3 and TIGIT), which are significantly higher in DP cells than in the CD4 or CD8 mature populations. This may suggest that these progenitors are already born into a state of high stress. TGF-beta is another potent immunosuppressor; its presence shows that as cells transition from DP to CD8, they are being dialed down by the suppressive signals from the tumor.
 
 # Conclussion
-Based on this analysis, following conclussions can be made:<br> 
+
+Based on this analysis, following conclussions can be made:
  - Evidence of Direct Ancestry -> Identical TCRs were found in DP, CD8, and CD4 clusters. This proves  DP cells are the parents of the mature effector cells<br>
  - Evidence of clonal expansion -> Single DP cell could be linked to many (~15-20) mature SP cells<br>
  - Cell cycle activity (proliferation) -> Highest cell cycle activity was detected in the DP cell population, which are the primary site of T-cell multiplication<br>
