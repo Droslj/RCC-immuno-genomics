@@ -2,10 +2,10 @@
 
 Study of DP T cells in Renal cancer, data taken from [1] <br>
 
-**Keywords**
+**Keywords**<br>
 Clonal expansion, Double positive T cells, Cancer immunology, scTCR-seq, scRNA-seq
 
-**Objective**
+**Objective**<br>
 This multi-omics project from the field of cancer genomics immunology studied the behavior of DP T cells in Renal cell carcinoma.<br>
 
 # Addressing the issues
