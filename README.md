@@ -150,13 +150,10 @@ Cytotoxic potential of DP-CD8 shared lineages is related with expression of cyto
 
 **Figure 8: Cytotoxic potential of shared cell lineages**
 
-**Observations**
-
-(1) The CD8 cells show the highest mean expression and largest fraction of cells for GZMB, PRF1, and GNLY. This indicates they are the fully mature T killer cells.
-
-(2) The DP cells already show moderate expression of these killing genes (especially GZMB and PRF1). They haven't reached the full intensity of the CD8 state.
-
-(3) The Lineage Split: The CD4 cells in these same families show almost no expression of these cytotoxic markers. This suggests that once a DP cell commits to the CD8 lineage, it activates this specific killing program.
+**Observations**<br>
+The CD8 cells show the highest mean expression and largest fraction of cells for GZMB, PRF1, and GNLY. This indicates they are the fully mature T killer cells<br>
+The DP cells already show moderate expression of these killing genes (especially GZMB and PRF1). They haven't reached the full intensity of the CD8 state<br>
+The Lineage Split: The CD4 cells in these same families show almost no expression of these cytotoxic markers. This suggests that once a DP cell commits to the CD8 lineage, it activates this specific killing program.<br>
 
 ### Inflammatory potential
 
@@ -167,18 +164,18 @@ Balance between pro and anti inflammatory response highlights the biological ten
 **Figure 9: Dotplot of pro vs. anti inflammatory markers**
 
 **Observations**<br>
-(1) DP cells and CD8 cells (left part of the plot) are predominantly active in pro-inflamatory response<br>
-(2) Chemokines (IFNG, CCL3, CCL4, CCL5), most expressed in DP and CD8 cells modulate the response of immune system<br>
-(3) Anti inflammatory response exhibits immunosuppression, demonstrated by Exhaustion markers (LAG3 and TIGIT), which are significantly higher in DP cells than in the CD4 or CD8 mature populations. This may suggest that these progenitors are already born into a state of high stress. TGF-beta is another potent immunosuppressor; its presence shows that as cells transition from DP to CD8, they are being dialed down by the suppressive signals from the tumor.
+DP cells and CD8 cells (left part of the plot) are predominantly active in pro-inflamatory response<br>
+Chemokines (IFNG, CCL3, CCL4, CCL5), most expressed in DP and CD8 cells modulate the response of immune system<br>
+Anti inflammatory response exhibits immunosuppression, demonstrated by Exhaustion markers (LAG3 and TIGIT), which are significantly higher in DP cells than in the CD4 or CD8 mature populations. This may suggest that these progenitors are already born into a state of high stress. TGF-beta is another potent immunosuppressor; its presence shows that as cells transition from DP to CD8, they are being dialed down by the suppressive signals from the tumor.
 
 # Conclussion
 Based on this analysis, following conclussions can be made:<br> 
-> (1) Evidence of Direct Ancestry -> Identical TCRs were found in DP, CD8, and CD4 clusters. This proves  DP cells are the parents of the mature effector cells<br>
-> (2) Evidence of clonal expansion -> Single DP cell could be linked to many (~15-20) mature SP cells<br>
-> (3) Cell cycle activity (proliferation) -> Highest cell cycle activity was detected in the DP cell population, which are the primary site of T-cell multiplication<br>
-> (4) Trajectory analysis (PAGA) -> DP cells are the Hub, connecting to all other states<br>
-> (5) Cytotoxic potential -> DP cells show predominantly signalling potential, while CD8 cells show true cytotoxic potential<br>
-> (6) Suppressive pressure -> DP cells function as a proliferative engine and a recruitment hub, but they also exhibit early signs of immune checkpoint expression. This indicates that the T-cell response in RCC is under suppressive pressure from the very moment of clonal birth.<br>
+ - Evidence of Direct Ancestry -> Identical TCRs were found in DP, CD8, and CD4 clusters. This proves  DP cells are the parents of the mature effector cells<br>
+ - Evidence of clonal expansion -> Single DP cell could be linked to many (~15-20) mature SP cells<br>
+ - Cell cycle activity (proliferation) -> Highest cell cycle activity was detected in the DP cell population, which are the primary site of T-cell multiplication<br>
+ - Trajectory analysis (PAGA) -> DP cells are the Hub, connecting to all other states<br>
+ - Cytotoxic potential -> DP cells show predominantly signalling potential, while CD8 cells show true cytotoxic potential<br>
+ - Suppressive pressure -> DP cells function as a proliferative engine and a recruitment hub, but they also exhibit early signs of immune checkpoint expression. This indicates that the T-cell response in RCC is under suppressive pressure from the very moment of clonal birth.<br>
 
 References:
 
